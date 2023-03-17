@@ -18,8 +18,9 @@ if __name__ == '__main__':
     test_num = 100
     useActive = False
     input_dir_transformer = "/home/cwc2022/soundSeparate/data/data_resample/transformer_resample"
-    input_dir_bird = "/home/cwc2022/soundSeparate/data/data_resample/bird_resample"
-    input_dir_others = "/data01/cwc/mix_3/car_fs8k"
+    # # input_dir_bird = "/home/cwc2022/soundSeparate/data/data_resample/bird_resample"
+    # input_dir_others = "/data01/cwc/mix_3/car_fs8k"
+    input_dir_others = ["/home/cwc2022/soundSeparate/data/data_resample/bird_resample", "/data01/cwc/mix_3/car_fs8k"]  #每个背景噪声的数据集作为list的一个元素
     
     CreateFiles(input_dir_transformer, input_dir_others,
                 output_dir, nums_file, state,test_num)
